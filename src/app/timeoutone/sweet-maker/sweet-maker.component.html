@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="header">Sweet Maker</h1>
+  
+    <p class="instructions">Please enter a comma-separated string</p>
+  
+    <input class="input-field" [(ngModel)]="ingredients" />
+  
+    <button class="calculate-button" (click)="calculateMaxSweets()">Calculate Max Sweets</button>
+  
+    <div class="results">
+      <p class="total-count">Total Count: {{ sweetCount.gulabJamunCount + sweetCount.chocolatePanCakeCount }}</p>
+      <p class="sweet-count">Gulab Jamun: {{ sweetCount.gulabJamunCount }}</p>
+      <p class="sweet-count">Chocolate Pan Cake: {{ sweetCount.chocolatePanCakeCount }}</p>
+    </div>
+  </div>
+  
